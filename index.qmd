@@ -1,12 +1,6 @@
----
-title: "media"
----
+[![](https://coolvibe.com/wp-content/uploads/2014/08/3D-Art-Gao-Ke-Yang-Monk.jpg)](file:///G:/MEDIA/cloud/con_xin_sam_hoi.mp4)
 
-This is a Quarto website.
+[![](https://coolvibe.com/wp-content/uploads/2014/12/3D-Art-Hu-Zheng-Monk.jpg)](file:///G:/MEDIA/cloud/muoi_hai_loi_nguyen_cua_bo_tat_quan_the_am.mp4)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-
-<file:///G:/MEDIA/cloud/Ng%C6%B0%E1%BB%9Di%20L%E1%BA%A1%20%C6%A0i%20!%20Official%20MV%20%EF%BD%9C%20Ch%C3%A2u%20%C4%90%C4%83ng%20Khoa%20x%20Karik%20x%20Orange%20[g20t_K9dlhU].webm>
 
 

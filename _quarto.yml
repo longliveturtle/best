@@ -10,7 +10,7 @@ website:
 
 format:
   html:
-    theme: darkly
+    theme: quartz
     css: styles.css
     toc: false
     page-layout: full

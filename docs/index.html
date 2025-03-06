@@ -85,6 +85,35 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="img/vlcsnap-2025-03-07-00h24m30s943.png" class="img-fluid"> <code>137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe</code></p>
+<pre><code>library(googledrive)
+
+url_final &lt;- "137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe"
+
+url_all &lt;- paste0("https://drive.google.com/file/d/", url_final)
+
+# public_file &lt;-  drive_get(url_all)
+
+drive_deauth()
+drive_user()
+
+drive_download(file = url_all,
+               # path = getwd(),
+               overwrite = TRUE)
+
+library(stringi)
+
+file_noaccent &lt;- stri_trans_general(str = list.files(pattern="*.webm"), 
+                                    id = "Latin-ASCII")
+file_nospace &lt;- gsub(" ", "", file_noaccent)
+
+file_nospace &lt;- tolower(file_nospace)
+
+# file_clean &lt;- gsub("[[:punct:]]", "", file_nospace)
+
+file.rename(from = list.files(pattern="*.webm"), 
+            to = file_nospace)
+
+shell(cmd = unique(file_nospace))</code></pre>
 <!-- https://drive.google.com/file/d/137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe/view?usp=drive_link -->
 <!-- [![](img/anh_muon_cau_hon_em.png)](file:///G:/MEDIA/cloud/anh_muon_cau_hon_em.mp4) -->
 <!-- [![](https://images6.alphacoders.com/381/381240.jpg)](file:///G:/MEDIA/cloud/road_to_glory.mp4) -->

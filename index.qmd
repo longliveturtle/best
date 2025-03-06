@@ -30,7 +30,16 @@ file_nospace <- tolower(file_nospace)
 file.rename(from = list.files(pattern="*.webm"), 
             to = file_nospace)
 
+# WINDOWS
+
 shell(cmd = unique(file_nospace))
+
+# LINUX (đã cài VLC)
+
+paste0(getwd(), "/", unique(file_nospace)) -> link_file
+
+system(command = paste0("chmod a+x ", link_file)) # cấp quyền để run file
+system(command = paste0("vlc ", link_file))
 ```
 
 

@@ -113,7 +113,16 @@ file_nospace &lt;- tolower(file_nospace)
 file.rename(from = list.files(pattern="*.webm"), 
             to = file_nospace)
 
-shell(cmd = unique(file_nospace))</code></pre>
+# WINDOWS
+
+shell(cmd = unique(file_nospace))
+
+# LINUX (đã cài VLC)
+
+paste0(getwd(), "/", unique(file_nospace)) -&gt; link_file
+
+system(command = paste0("chmod a+x ", link_file)) # cấp quyền để run file
+system(command = paste0("vlc ", link_file))</code></pre>
 <!-- https://drive.google.com/file/d/137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe/view?usp=drive_link -->
 <!-- [![](img/anh_muon_cau_hon_em.png)](file:///G:/MEDIA/cloud/anh_muon_cau_hon_em.mp4) -->
 <!-- [![](https://images6.alphacoders.com/381/381240.jpg)](file:///G:/MEDIA/cloud/road_to_glory.mp4) -->

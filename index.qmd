@@ -42,6 +42,8 @@ system(command = paste0("chmod a+x ", link_file)) # cấp quyền để run file
 system(command = paste0("vlc ", link_file))
 ```
 
+ok
+
 
 
 

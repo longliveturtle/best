@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe\nlibrary(googledrive)\n\nurl_final &lt;- \"137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe\"\n\nurl_all &lt;- paste0(\"https://drive.google.com/file/d/\", url_final)\n\n# public_file &lt;-  drive_get(url_all)\n\ndrive_deauth()\ndrive_user()\n\ndrive_download(file = url_all,\n               # path = getwd(),\n               overwrite = TRUE)\n\nlibrary(stringi)\n\nfile_noaccent &lt;- stri_trans_general(str = list.files(pattern=\"*.webm\"), \n                                    id = \"Latin-ASCII\")\nfile_nospace &lt;- gsub(\" \", \"\", file_noaccent)\n\nfile_nospace &lt;- tolower(file_nospace)\n\n# file_clean &lt;- gsub(\"[[:punct:]]\", \"\", file_nospace)\n\nfile.rename(from = list.files(pattern=\"*.webm\"), \n            to = file_nospace)\n\n# WINDOWS\n\nshell(cmd = unique(file_nospace))\n\n# LINUX (đã cài VLC)\n\npaste0(getwd(), \"/\", unique(file_nospace)) -&gt; link_file\n\nsystem(command = paste0(\"chmod a+x \", link_file)) # cấp quyền để run file\nsystem(command = paste0(\"vlc \", link_file))\nok"
+  }
+]

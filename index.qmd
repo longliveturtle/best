@@ -1,5 +1,10 @@
+![](img/vlcsnap-2025-03-07-01h09m45s863.png)
+
+Yên bình   `1iUjPTYs1sHulcu9qaFHV4nW0CSS4sFHU`
+
 ![](img/vlcsnap-2025-03-07-00h24m30s943.png)
-`137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe`
+
+Làm ơn   `137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe`
 
 ```
 library(googledrive)
@@ -41,11 +46,6 @@ paste0(getwd(), "/", unique(file_nospace)) -> link_file
 system(command = paste0("chmod a+x ", link_file)) # cấp quyền để run file
 system(command = paste0("vlc ", link_file))
 ```
-
-ok
-
-
-
 
 
 <!-- https://drive.google.com/file/d/137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe/view?usp=drive_link -->

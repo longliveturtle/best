@@ -1,5 +1,5 @@
 ![](https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/a2/78/36/a278366d-e3fa-3745-da49-8c11eb192a90/0724358021356_1401x1401_300dpi.tif/300x300bb.webp)
-
+ 
 ```{=html}
 <audio controls>
   <source src="horse.ogg" type="audio/ogg">
@@ -7,8 +7,6 @@
 Your browser does not support the audio element.
 </audio>
 ```
-
-
 
 Conquest of Paradise
 Song by Dana Winner ‧ 2002
@@ -52,3 +50,17 @@ A beam that glows within every soul
 Like wings of hope taking flight
 Like wings of hope taking flight
 ```
+
+<script>!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/u4lxai3"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");</script>
+
+<div id="rumble_v6s08nz"></div>
+<script>
+Rumble("play", {"video":"v6s08nz","div":"rumble_v6s08nz"});</script>
+‎ 
+<script>!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/u4lxai3"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");</script>
+
+<div id="rumble_v6ryqpx"></div>
+<script>
+Rumble("play", {"video":"v6ryqpx","div":"rumble_v6ryqpx"});</script>
+
+

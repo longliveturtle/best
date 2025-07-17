@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources: 
+    - "*.mp3"
+    - "*.m4a"
+    - "*.wav"
 
 website:
   title: ""

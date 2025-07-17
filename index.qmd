@@ -1,104 +1,54 @@
-![](img/vlcsnap-2025-03-07-01h09m45s863.png)
+![](https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/a2/78/36/a278366d-e3fa-3745-da49-8c11eb192a90/0724358021356_1401x1401_300dpi.tif/300x300bb.webp)
 
-Yên bình   `1iUjPTYs1sHulcu9qaFHV4nW0CSS4sFHU`
-
-![](img/vlcsnap-2025-03-07-00h24m30s943.png)
-
-Làm ơn   `137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe`
-
-```
-library(googledrive)
-
-url_final <- "137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe"
-
-url_all <- paste0("https://drive.google.com/file/d/", url_final)
-
-# public_file <-  drive_get(url_all)
-
-drive_deauth()
-drive_user()
-
-drive_download(file = url_all,
-               # path = getwd(),
-               overwrite = TRUE)
-
-library(stringi)
-
-file_noaccent <- stri_trans_general(str = list.files(pattern="*.webm"), 
-                                    id = "Latin-ASCII")
-file_nospace <- gsub(" ", "", file_noaccent)
-
-file_nospace <- tolower(file_nospace)
-
-# file_clean <- gsub("[[:punct:]]", "", file_nospace)
-
-file.rename(from = list.files(pattern="*.webm"), 
-            to = file_nospace)
-
-# WINDOWS
-
-shell(cmd = unique(file_nospace))
-
-# LINUX (đã cài VLC)
-
-paste0(getwd(), "/", unique(file_nospace)) -> link_file
-
-system(command = paste0("chmod a+x ", link_file)) # cấp quyền để run file
-system(command = paste0("vlc ", link_file))
+```{=html}
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="yes/Dana_Winner_Conquest_of_Paradise.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 ```
 
 
-<!-- https://drive.google.com/file/d/137f6K_Z9puefUr6dxiP_q7Y2gS5nUZNe/view?usp=drive_link -->
 
+Conquest of Paradise
+Song by Dana Winner ‧ 2002
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- [![](img/anh_muon_cau_hon_em.png)](file:///G:/MEDIA/cloud/anh_muon_cau_hon_em.mp4) -->
-
-<!-- [![](https://images6.alphacoders.com/381/381240.jpg)](file:///G:/MEDIA/cloud/road_to_glory.mp4) -->
-
-<!-- [![](img/qtabt.jpg)](file:///G:/MEDIA/cloud/nam_mo_dai_bi_quan_the_am_bo_tat.mp4) -->
-
-<!-- [![](img/bo_tat_quan_am.jpg)](file:///G:/MEDIA/cloud/nam_mo_quan_the_am_bo_tat.mp4) -->
-
-<!-- [![](img/hope.jpeg)](file:///G:/MEDIA/cloud/hope.webm) -->
-
-<!-- [![](img/kannon_riding_a_dragon.jpg)](https://en.wikipedia.org/wiki/Harada_Naojir%C5%8D) -->
-
-<!-- [![](img/w1.jpg)](file:///G:/MEDIA/cloud/duong_dai_toi_buoc.mp4) -->
-
-<!-- [![](img/in_the_end.png)](file:///G:/MEDIA/cloud/in_the_end.mp4) -->
-
-<!-- [![](https://i.pinimg.com/736x/12/50/d2/1250d274840180f4f652ae0ff66f801e.jpg)](file:///G:/MEDIA/cloud/ba_chang_ngu_lam_tam_ca_doremi.m4a) -->
-
-<!-- [![](img/noi.png)](file:///G:/MEDIA/cloud/noi.mp4) -->
-
-<!-- [![](img/boi_vi_anh_yeu_em.png)](file:///G:/MEDIA/cloud/boi_vi_anh_yeu_em.webm) -->
-
-<!-- [![](img/minh_anh_chap_het.png)](file:///G:/MEDIA/cloud/minh_anh_chap_het.mp4) -->
-
-<!-- [![](https://coolvibe.com/wp-content/uploads/2014/12/3D-Art-Hu-Zheng-Monk.jpg)](file:///G:/MEDIA/cloud/muoi_hai_loi_nguyen_cua_bo_tat_quan_the_am.mp4) -->
-
-<!-- [![](https://coolvibe.com/wp-content/uploads/2014/08/3D-Art-Gao-Ke-Yang-Monk.jpg)](file:///G:/MEDIA/cloud/con_xin_sam_hoi.mp4) -->
-
-<!-- 1. <https://alphacoders.com/> -->
-
-<!-- 2. <https://www.wallpaperflare.com/> -->
-
-<!-- 3. <https://m.vuiz.net/getlink/nhaccuatui/> -->
-
-
-
-
-
-
+```
+There shines a light in the heart of man
+Defies the dead of the night
+A beam that glows within every soul
+Like wings of hope taking flight
+A sunny day, when a baby's born
+The little things that we say
+A special sparkle in someone's eye
+Simple gifts every day
+Somewhere there's a paradise
+Where everyone finds release
+It's here on earth and between your eyes
+A place we all find our peace
+Come, open your heart
+Reach for the stars
+Believe your own power
+Now, here in this place
+Here on this earth
+This is the hour
+It's just a place we call paradise
+Each of us has his own
+It has no name, no, it has no price
+It's just a place we call home
+A dream that reaches beyond the stars
+The endless blue of the skies
+Forever wondering who we are
+Forever questioning why
+Come, open your heart
+Reach for the stars
+Believe your own power
+Now, here in this place
+Here on this earth
+This is the hour
+There shines a light in the heart of man
+Defies the dead of the night
+A beam that glows within every soul
+Like wings of hope taking flight
+Like wings of hope taking flight
+```

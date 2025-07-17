@@ -3,12 +3,13 @@
 ```{=html}
 <audio controls>
   <source src="horse.ogg" type="audio/ogg">
-  <source src="yes/Dana_Winner_Conquest_of_Paradise.mp3" type="audio/mpeg">
+  <source src="http://book.thuviencanhan.com:8033/static/music/Dana_Winner_Conquest_of_Paradise.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 ```
 
 Conquest of Paradise
+
 Song by Dana Winner ‧ 2002
 
 ```
@@ -51,16 +52,10 @@ Like wings of hope taking flight
 Like wings of hope taking flight
 ```
 
-<script>!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/u4lxai3"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");</script>
+In the end
 
-<div id="rumble_v6s08nz"></div>
-<script>
-Rumble("play", {"video":"v6s08nz","div":"rumble_v6s08nz"});</script>
-‎ 
-<script>!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/u4lxai3"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");</script>
+{{< video http://book.thuviencanhan.com:8033/static/music/in_the_end.mp4 >}}
 
-<div id="rumble_v6ryqpx"></div>
-<script>
-Rumble("play", {"video":"v6ryqpx","div":"rumble_v6ryqpx"});</script>
+Mình anh chấp hết
 
-
+{{< video http://book.thuviencanhan.com:8033/static/music/minh_anh_chap_het.mp4 >}}

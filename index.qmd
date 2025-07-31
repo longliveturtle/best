@@ -3,8 +3,7 @@
 <script>
 // List of your post HTML files
 const postFiles = [
-'1.html',
-'2.html'  // Add more as needed
+'a.html'
 ];
 
 // Pick one at random

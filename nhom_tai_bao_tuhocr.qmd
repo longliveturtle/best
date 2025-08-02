@@ -1,0 +1,21 @@
+<div id="post-container" class="post"></div>
+
+<script>
+// List of external post URLs
+const postUrls = [
+'http://book.thuviencanhan.com:8081/',
+'http://book.thuviencanhan.com:8082/',
+'http://book.thuviencanhan.com:8083/'
+];
+
+// Pick one at random
+const randomUrl = postUrls[Math.floor(Math.random() * postUrls.length)];
+
+// Redirect to it
+window.location.href = randomUrl;
+</script>
+
+
+
+
+

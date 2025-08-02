@@ -1,0 +1,34 @@
+<div id="post-container" class="post"></div>
+
+<script>
+// List of your post HTML files
+const postFiles = [
+'https://www.tuhocr.com/premium-service',
+'https://class.tuhocr.com/huong-dan-ve-logistics-don-bien-cung-luc-cho-nhieu-cot/'
+];
+
+// Pick one at random
+const randomPost = postFiles[Math.floor(Math.random() * postFiles.length)];
+
+// Load the random post via fetch
+fetch(randomPost)
+.then(response => {
+if (!response.ok) {
+throw new Error('');
+}
+return response.text();
+})
+.then(html => {
+document.getElementById('post-container').innerHTML = html;
+})
+.catch(error => {
+document.getElementById('post-container').innerHTML = '';
+console.error(error);
+});
+
+</script>
+
+
+
+
+

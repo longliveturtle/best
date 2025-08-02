@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>index_1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,22 +88,31 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 <script>
-// List of external post URLs
-const postUrls = [
-'https://t.me/cuoc_song_tuyet_voi/3',
-'https://t.me/cuoc_song_tuyet_voi/4',
-'https://t.me/cuoc_song_tuyet_voi/5?comment=9',
-'https://t.me/cuoc_song_tuyet_voi/6',
-'https://t.me/cuoc_song_tuyet_voi/7',
-'https://t.me/cuoc_song_tuyet_voi/9',
-'https://t.me/cuoc_song_tuyet_voi/10'
+// List of your post HTML files
+const postFiles = [
+'https://www.tuhocr.com/premium-service',
+'https://class.tuhocr.com/huong-dan-ve-logistics-don-bien-cung-luc-cho-nhieu-cot/'
 ];
 
 // Pick one at random
-const randomUrl = postUrls[Math.floor(Math.random() * postUrls.length)];
+const randomPost = postFiles[Math.floor(Math.random() * postFiles.length)];
 
-// Redirect to it
-window.location.href = randomUrl;
+// Load the random post via fetch
+fetch(randomPost)
+.then(response => {
+if (!response.ok) {
+throw new Error('');
+}
+return response.text();
+})
+.then(html => {
+document.getElementById('post-container').innerHTML = html;
+})
+.catch(error => {
+document.getElementById('post-container').innerHTML = '';
+console.error(error);
+});
+
 </script>
 
 
